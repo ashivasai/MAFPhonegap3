@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="../css/clinic.css" />
+<script>
+function previewMenu(){
+	var previewUrl = "http://apps.zambientsystems.com:8080/MAF/android/registerAppUser.json?appcode=clinic2&email=kiran@gmail.com";
+	//$.ajaxSetup({ cache: false });
+	$.ajax ({
+       url: previewUrl,
+       type: "GET",
+       success: function(data){
+    	   console.log("JSON.stringify===>main"+JSON.stringify(data));
+		    if(data.length<1){
+	 		   location.reload(true);
+	    	}
+			 var homehtml="<div class=\"landingPageimageviewpreview\" id=\"person_data\">"
+    		   			+"<img id=\"output\" src=\"http://apps.zambientsystems.com:8080/"+data.appDetailsBean.businessDetails.bgImage+"\" style=\"width: 100%; height: 100%;\" /></div>"
+    	   				+"<div class=\"home_persondata\">"
+    	   				+"<div class=\"Persondetails\" id=\"person_details\">"
+    	   				+"<div class=\"menulist_lp\">";
+			 $.each(data.appDetailsBean.featuresList,function(key,content){
+    		   homehtml=homehtml +"<div class=\"Home\" style=\"background: "+content.color+"!important;\" onclick=\"preview"+content.featureId+"()\">"+content.displayTitle+"</div>";
+    	   });
+			homehtml=homehtml +"</div></div></div>";
+			 //$("#pagetitle").text(data.appDetailsBean.businessDetails.appName);
+		   $("#infoPhone1_lp").html(homehtml);	
+    	   
+		   //$("#infoPhone1_lp").html(JSON.stringify(data));
+       }
+   });
+}
+;
+$(function(){
+
+previewMenu();
+});
+</script>
+</head>
+<body>
+<div id="infoPhone1_lp"></div>
+</body>
+</html>
