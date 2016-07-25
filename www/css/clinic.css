@@ -96,16 +96,16 @@ body{
     background: transparent;
     opacity: 1.0;
     font-size: 13px;
-    position: relative;
+    position: absolute;
     /* left: 14px; */
-    width: 100%;
+    width: 94%;
     /* top: 34px; */
     height: 94%;
     line-height: 18px;
     text-align:justify;
     /* font-weight:normal; */
     overflow-y: auto;
-    padding: 3px;
+    padding: 3%;
     color: #fff;
 }
  
@@ -236,7 +236,7 @@ color:white;
 		color: black;
 		width: 100%;
 		height: 100%;
-		/* position: absolute; */
+		position: absolute;
 	}
 	.customHead{
 		height:7%;
@@ -334,16 +334,17 @@ padding: 6px;
 .Home{
    background: #65c7d7;
    /*   border: 5px solid #65c7d7; */
-   height: 33px;
-   width: 91%;
+   height: auto;
+   width: 88%;
    margin: 3%;
+   padding: 3%;
    border-radius: 100px;
    text-align:center;
    color:white;
    font-size:15px;
    font-weight:normal;
-   padding:0px 1px;
-   line-height: 33px;
+   /* padding:0px 1px; */
+   /* line-height: 33px; */
 }
 .doctorlist{
 	background: #51bf56;
@@ -509,7 +510,7 @@ height: 34%;
 }
 .previewbackImg{
 	position: absolute;
-	height: 93%;
+	/* height: 93%; */
 	width: 100%;
 }
 
@@ -598,6 +599,7 @@ height: 34%;
 	/* height:78%; */
 	position: absolute;
 	width: 100%;
+	height: 100%;
 	}
    .header{
   width: 100%;
@@ -673,7 +675,7 @@ background: white;
 /* divya */
 .persondata_contact{
  /* height: 100%; */
- height: 93%;
+ height: 100%;
  background:white;
  }
  .persondata_contactpreview{
@@ -974,13 +976,12 @@ background: white;
  
 .mobileviewDrlistul{
 	margin:0px;
-	
+	width: 99%;
 }
 .mobileviewSerlistul{
 	margin:0px;
-	width: 100%;
+	width: 94%;
 	height: 100%;
-	
 }
 .mobileviewproductul{
 	  width: 100%;
@@ -1002,13 +1003,13 @@ background: white;
 	    border-radius: 4px;
 }
 .mobilepreviewDrlist .doctorsli{
-	    width: 47%;
+	    width: 46%;
 	    /* padding: 4px; */
 	    background: white;
 	    float: left;
 	    margin-left: 5px;
 	    /* padding: 4%; */
-	    height: 135px;
+	    height: 213px;
 	    margin-top: 3px;
 	    border-radius: 0px;
 	    list-style: none;
@@ -1274,9 +1275,9 @@ border:1px solid #fff;
 }
 .mobileviewSerlist{
 	
-    width: 100%;
-    height: 100%;
+width: 100%;
 	
+height: 100%;
 }
 .btn-success {
     color: #333;
@@ -1319,7 +1320,7 @@ border:1px solid #fff;
 	
 /* margin-left: 4%; */
 	
-/* margin-top: 43%; */
+margin-top: 40%;
 	
 width: 100%;
 }
@@ -1747,8 +1748,8 @@ padding: 9px;
     text-align: center;
     font-size: 15px;
     color: white;
-    height: 27px;
-    line-height: 27px;
+    height: 48px;
+    line-height: 48px;
 }
 .appIconView {
     height: 25px;
@@ -1837,11 +1838,10 @@ padding: 9px;
 }
 .glassprecontact{
 	width:100%;
-	height:30%;
+	height: 38%;
 	background:#000;
 	opacity:0.7;
 	position: absolute;
-	
 }
 /*--QR CODE popup CSS--*/
 
